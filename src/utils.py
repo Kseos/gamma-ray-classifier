@@ -27,9 +27,8 @@ def scale_and_oversample(df, oversample=False):
     X = df[df.columns[:-1]].values  # Все колонки кроме последней
     y = df[df.columns[-1]].values  # Последняя колонка - это целевая переменная (class)
 
-    # Масштабируем признаки
     scaler = StandardScaler()
-    X, y = scaler.fit_transform(X, y)
+    X = scaler.fit_transform(X)
 
     if oversample:
         # Применяем овер-сэмплинг
