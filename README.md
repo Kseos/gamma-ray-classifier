@@ -28,6 +28,7 @@ pip install -r requirements.txt
 gamma-ray-classifier/
 ├── data/             # Dataset files
 ├── notebooks/        # Jupyter notebooks
+├── src/              # Code for data processing and modeling
 ├── results/          # Model outputs
 ├── README.md         # Documentation
 ├── requirements.txt  # Dependencies
